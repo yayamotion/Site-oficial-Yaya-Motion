@@ -27,21 +27,21 @@ header{
 }
 
 body{
-    background-color: #2a1335;
+    background-image: radial-gradient(circle, #77167a 1%, #260827 99%);
+    background-image: ;
     color: #fbda71;
 }
 
 .banner {
     position: absolute;
     top: 20%;
-    left: 60%;
     margin: 20px;
 }
 
  .banner h1{
-    font-size: 4em ;
+    font-size: 10vw ;
     font-family: "Roboto thin", serif;
-    text-align: right;
+    text-align: center;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
 
