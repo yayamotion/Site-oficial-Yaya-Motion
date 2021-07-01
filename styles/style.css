@@ -1,81 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Declarando Cores*/
+:root{
+    --darkpurp : #4c255e;
+    --lightpurp : #ad77c7;
+    --bluepurp : #b9affa;
+    --darkyellow : #917c50;
+    --lightyellow : #fbda71;
 
-*{
-    margin: 0;
-    padding: 0;
+    --purpgradient : linear-gradient(90deg,var(--darkpurp),#96347d);
+}
+/*Logo Menu*/
+.logohome{
+    height: 30px;
+    padding: 10px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--lightyellow);
+    margin-bottom: 20px;
 }
 
-header{
-    width: 100%;
-
-    position: relative;
-    
-    overflow: hidden;
-}
-
-.imgwrap{
-
-    height: 100vh;
-    width: 100%;
-}
-
-.imgwrap video{
+.logohome svg{
     height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    fill: var(--lightyellow);
+    min-width: 100px;
 }
 
-body{
-    background-image: radial-gradient(circle, #77167a 1%, #260827 99%);
-    background-image: ;
-    color: #fbda71;
-}
-
-.banner {
-    position: absolute;
-    top: 20%;
-    margin: 20px;
-}
-
- .banner h1{
-    font-size: 10vw ;
-    font-family: "Roboto thin", serif;
-    text-align: center;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-}
-
-.banner p{
-    font-family: "Roboto", serif;
-    text-align: right;
-    line-height: 1.5em;
-    margin-top: 40px;
-}
-
-.menu ul{
-    background-color: #fbda71;
-    list-style: none;
-    color: #2a1335;
-    font-family: "Roboto", serif;
-    height: 2em;
-    padding-top: 1em;
-
+/*Nav Menu*/
+.menu{
+    color: var(--lightyellow);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    height: 20px;
+    background: --darkpurp;
 }
 
 .menu li{
+    padding: 10px;
     display: inline;
-    padding:1em;
-    height: 1em;
-    font-size: 100%;
+}
+/*nav Menu*/
+
+
+body{
+    background: var(--purpgradient);
+    animation: slide 5s easy alternate infinite ;
+    background-size: 400%;
+    background-position: 0%;
+
 }
 
-li:hover{
-
-    background-color: #2a1335;
-    color: #fbda71;
-    border-radius: 0.5em;
-}
-
-.menu img{
-    height: 1em;
+svg{
+    height: 200px;
+    fill: rgba( 255, 255, 255, 0.20) ;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur( 4.5px );
+    stroke: rgba( 255, 255, 255, 0.18 );
+    stroke-width: 1px;
 }

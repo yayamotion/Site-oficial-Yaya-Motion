@@ -1,17 +1,18 @@
 
+function post(titulo,mensagemp,autorp,visualizacoes,aovivo,mensagemc,autorc){
 
-let msg = verificarvelocidade(35);
-console.log(msg);
-
-function verificarvelocidade (vel){
-    
-    pontos = vel >= 75 ? (vel - 70)/5: 0 ;
-
-    if (pontos>12){
-        return 'Carteira Suspensa'
+    this.titulo = titulo,
+    this.mensagem = mensagemp,
+    this.autor = autorp,
+    this.visualizacoes = visualizacoes,
+    this.coment = {
+        mensagemc : mensagemc,
+        autorc : autorc
     }
-    else{
-        return Math.floor(pontos);
-    }
+    this.aovivo = aovivo
 
 }
+
+const post1 = new post('olá mundo!','Gostaria de dar olá ao mundo do java script','allan','999',true,'oi nada trouxa','Nenel');
+
+console.log(post1);

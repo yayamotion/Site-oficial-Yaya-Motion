@@ -1,0 +1,5 @@
+@keyframes slide {
+
+        to{background-position-y: 100% ;}  
+        
+    }
