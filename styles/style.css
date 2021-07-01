@@ -8,17 +8,22 @@
     --lightyellow : #fbda71;
 
     --purpgradient : linear-gradient(90deg,var(--darkpurp),#96347d);
-    --purpgradiental : linear-gradient(90deg,rgba(78, 38, 97,.2),rgba(150, 52, 125,.2));
+    --purpgradiental : linear-gradient(90deg,rgba(78, 38, 97,.1),rgba(150, 52, 125,.1));
 }
 /*Logo Menu*/
 .logohome{
     height: 30px;
+    width: 100%;
     padding: 10px;
     display : flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--lightyellow);
     margin-bottom: 20px;
+    position: fixed;
+    z-index: 1000;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, .4) ;
 }
 
 .logohome svg{
@@ -80,15 +85,21 @@ main{
 }
 main h1{
 
-    font-size: 5vw;
+    font-size: 12vh;
 
 }
 
 main h2{
-    font-size: 3vw;
+    font-size: 2vw;
+    padding: 10px;
+}
+
+main p{
+    padding: 10px;
 }
 
 .bemvindo{
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -119,11 +130,49 @@ main h2{
 
 .arrow {
     display: flex;
+    height: 5vw;
     justify-content: center;
     width: 100%;
-    margin: 50px auto;
+    padding: 10px;
+
 }
 
 .arrow svg{
     height: 100%;
+    opacity: .5;
+    transition: .5s;
+}
+
+.arrow svg:hover{
+    opacity: 1;
+}
+
+.sobre{
+    width: 100%;
+}
+
+.sobre h2{
+    width: 100%;
+}
+.containersobre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.containersobre p{
+
+    max-width: 50%;
+
+}
+
+.containersobre img{
+    height: 300px;
+    min-width: 200px;
+}
+
+@media (max-width:600px){
+    .bemvindo h1{
+        height: 60vh;
+        text-align: left;
+    }
 }
