@@ -14,13 +14,16 @@
     --yelpgradiental : linear-gradient(90deg,rgba(251, 218, 113,.4),rgba(145, 124, 80,.2));
 }
 /*Logo Menu*/
+
+header{
+    width: 100%;
+}
 .logohome{
     height: 30px;
     width: 100%;
     padding: 10px;
     display : flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     border-bottom: 1px solid var(--lightyellow);
     margin-bottom: 20px;
     position: fixed;
@@ -30,7 +33,7 @@
 }
 
 .logohome svg{
-    height: 100%;
+    width: 90%;
     fill: var(--lightyellow);
     min-width: 100px;
 }
@@ -59,6 +62,7 @@
 
 .menu{
     height: 20px;
+    width: 100%;
 }
 
 .menu li{
@@ -72,9 +76,6 @@ body{
     color: var(--lightyellow);
     font-family: 'Roboto', sans-serif;
     background-image: var(--purpgradient);
-    animation: slide 5s easy alternate infinite ;
-    background-size: 400%;
-    background-position: 0%;
 }
 
 secttion{
@@ -347,7 +348,6 @@ main section{
     font-family: 'Roboto' sans-serif;
     font-size: 2rem ;
     background-image: var(--purpgradient);
-    padding: 20px;
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -355,6 +355,7 @@ main section{
 
 footer{
     width: 100%;
+    padding: 10px;
 }
 
 .containerfoot h2{
@@ -367,7 +368,7 @@ footer{
     margin: 50px;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .containerfoot li{
@@ -375,6 +376,7 @@ footer{
     font-size: 1rem;
     width: 13%;
     min-width: 130px;
+    max-width: 40px ;
 }
 
 .containerfoot a{
@@ -439,9 +441,16 @@ footer{
         width: 100%;
     }
 
+    .clientes {
+        text-align: center;
+    }
+
     .clientes li{
         width: 100%;
     }
 
+    main{
+        margin: 0px;
+    }
 
 }
