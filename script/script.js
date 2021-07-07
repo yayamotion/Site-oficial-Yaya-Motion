@@ -1,18 +1,25 @@
 
-function post(titulo,mensagemp,autorp,visualizacoes,aovivo,mensagemc,autorc){
+/*Cria  objeto Cliente*/
+function client(name,business,email,phone){
 
-    this.titulo = titulo,
-    this.mensagem = mensagemp,
-    this.autor = autorp,
-    this.visualizacoes = visualizacoes,
-    this.coment = {
-        mensagemc : mensagemc,
-        autorc : autorc
-    }
-    this.aovivo = aovivo
+    this.name = name,
+    this.business = business,
+    this.email = email,
+    this.phone = phone
 
 }
 
-const post1 = new post('olá mundo!','Gostaria de dar olá ao mundo do java script','allan','999',true,'oi nada trouxa','Nenel');
+/*Cria novo cliente*/
+function newClient(){
+    const client0 = new client(document.querySelector('input.nome'),document.querySelector('input.empresa'),document.querySelector('input.email'),document.querySelector('input.fone'))
+}
 
-console.log(post1);
+function enviar () {
+    var texto = document.querySelector("input.nome");
+    var btn = document.querySelector("input.enviar");
+    btn.innerHTML = `${texto}`
+}
+
+function teste(){
+    alert('Entrando an função');
+}

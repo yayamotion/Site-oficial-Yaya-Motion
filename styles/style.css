@@ -340,6 +340,21 @@ main section{
     width: 46%;
 }
 
+.contato .enviar {
+    width: 100%;
+    background-image: var(--yelpgradient);
+    color: var(--darkpurp);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.contato .enviar:hover{
+
+    background-image: var(--purpgradient);
+    color: var(--lightyellow);
+    transition: 0.8s;
+
+}
 .containerfoot {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -437,7 +452,7 @@ footer{
         text-align: center;
     }
 
-    .contato .nome,.contato .empresa, .contato .email, .contato .fone{
+    .contato .nome,.contato .empresa, .contato .email, .contato .fon, .contato .enviar{
         width: 100%;
     }
 
